@@ -29,7 +29,7 @@ def outputPatentInfo(key, values):
             print("%s\tbad missing patent info " % (key))
         else:
             try:
-                cites_official = int( info[0].split(',')[11] )
+                cites_official = int( info[0].split(',')[5] )
             except ValueError as e:
                 cites_official = 0
 
