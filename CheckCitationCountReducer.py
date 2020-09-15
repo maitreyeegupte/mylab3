@@ -34,7 +34,7 @@ def outputPatentInfo(key, values):
                 cites_official = 0
 
             if len(cites) == cites_official:
-                print("%s\tok" % (key))
+                print("%s\t%s" % (key,info[5]))
 #
 # It would be nice to use the counters in this example but it
 # causes the Java process to run out of heap space
