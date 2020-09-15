@@ -23,7 +23,8 @@ for line in sys.stdin:
         #
         try:
             cite = int(words[0])
-            print('%s\t%s' % (words[0], 'y'))
+            citation = int(words[1])
+            print('%s\t%s' % (words[0], words[1]))
         except Exception as e:
             # improperly formed citation number
             if debug:
@@ -41,3 +42,4 @@ for line in sys.stdin:
             if debug:
                 print("Exception ", e);
             pass
+
